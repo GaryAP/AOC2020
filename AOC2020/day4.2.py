@@ -41,7 +41,6 @@ for e in reee:
                 else:
                     three = True
             elif "hgt" in x:
-                print(hgt)
                 hgt = x.split(":")
                 if "cm" in hgt[1]:
                     x =(hgt[1].split("cm"))
@@ -55,6 +54,8 @@ for e in reee:
                         four = False
                     else:
                         four = True
+                else:
+                    four = False
             elif "hcl" in x:
                 hcl = x.split(":")
                 p = hcl[1].split("#")
